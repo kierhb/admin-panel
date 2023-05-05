@@ -16,6 +16,7 @@ import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
 
 const Sidebar = () => {
+  //@ts-ignore
   const { dispatch } = useContext(DarkModeContext);
 
   return (

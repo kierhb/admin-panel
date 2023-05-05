@@ -1,5 +1,5 @@
 import "./datatable.scss";
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -7,6 +7,7 @@ import { useState } from "react";
 const Datatable = () => {
   const [data, setData] = useState(userRows);
 
+  //@ts-ignore
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
@@ -16,6 +17,7 @@ const Datatable = () => {
       field: "action",
       headerName: "Action",
       width: 200,
+      //@ts-ignore
       renderCell: (params) => {
         return (
           <div className="cellAction">

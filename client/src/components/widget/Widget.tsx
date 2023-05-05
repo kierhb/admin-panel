@@ -5,8 +5,16 @@ import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalance
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 
+// @ts-ignore
 const Widget = ({ type }) => {
-  let data;
+  let data:
+    | {
+        title: string;
+        isMoney: boolean;
+        link: string;
+        icon: JSX.Element;
+      }
+    | undefined;
 
   //? TEMPORARY
   const amount = 100;

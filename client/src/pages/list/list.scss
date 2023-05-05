@@ -1,0 +1,15 @@
+$light-ash: #dadee3;
+$soft-brown: #c5a482;
+$orange-brown: #ad6544;
+$light-blue-green: #d1f0f0;
+$dark-blue-green: #2b5454;
+$black: #151a1a;
+
+.list {
+  display: flex;
+  width: 100%;
+
+  .listContainer {
+    flex: 6;
+  }
+}
